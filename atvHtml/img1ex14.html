@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img 1</title>
+    <style>
+        body{
+            text-align: start;
+            justify-content: center;
+            background-color:  rgb(6, 169, 233);
+            
+            
+        }
+        .container{
+           display: grid;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            row-gap: 10px;
+            background-color: rgb(6, 169, 233);
+            grid-template-areas: 
+            "c1 c2 c3 c4 c5"
+            "c1 c2 c3 c4 c5"
+            "c1 c2 c3 c4 c5"
+            "c1 c2 c3 c4 c5"
+            "c1 c2 c3 c4 c5"
+            "c1 c2 c3 c4 c5";
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        }
+        .caixa1{
+            background-color: rgb(96, 210, 213);
+            column-gap: 20px;
+            row-gap: 30px; 
+           grid-area: c1;
+        }
+        .caixa2{
+            background-color:rgb(96, 210, 213) ;
+            column-gap: 10px;
+            row-gap: 20px;
+            grid-area: c2;
+            
+        }
+        .caixa3{
+            grid-area: c3;
+            background-color:rgb(96, 210, 213) ;
+            column-gap: 20px;
+            row-gap: 30px;
+          
+           
+        }
+        .caixa4{
+            grid-area: c4;
+            background-color:rgb(96, 210, 213) ;
+            column-gap: 20px;
+            row-gap: 30px;
+           
+        }
+        .caixa5{
+            grid-area: c5;
+            background-color:rgb(96, 210, 213) ;
+            column-gap: 50px;
+            row-gap: 70px;
+            
+        }
+        
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="caixa1">1</div>
+<div class="caixa2">2</div>
+<div class="caixa3">3</div>
+<div class="caixa4">4</div>
+<div class="caixa5">5</div>
+
+    </div>
+</body>
+</html>
